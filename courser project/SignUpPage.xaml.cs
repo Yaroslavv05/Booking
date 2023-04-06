@@ -1,4 +1,5 @@
-﻿using courser_project.Core.Context;
+﻿using courser_project;
+using courser_project.Core.Context;
 using courser_project.Core.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -42,11 +43,15 @@ namespace Сourse_project
                     db.Add(users);
                     db.SaveChanges();
                 }
-                MessageBox.Show("ИЗи!");
+                MessageBox.Show("Are you registered!");
+                Main main = new Main();
+                Close();
+                main.Show();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+
             }
 
         }
@@ -54,6 +59,13 @@ namespace Сourse_project
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
+        }
+
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow signUpPage = new MainWindow();
+            Close();
+            signUpPage.Show();
         }
     }
 }

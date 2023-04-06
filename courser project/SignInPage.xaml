@@ -6,20 +6,21 @@
         xmlns:local="clr-namespace:Сourse_project"
         mc:Ignorable="d"
         Title="SignInPage" Height="450" Width="800">
-    <Grid>
-        <Grid Background="#99000000">
-            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-                <TextBlock Text="Sign In" FontSize="48" Foreground="White" Margin="0 0 0 20"/>
-                <StackPanel Margin="0 20">
-                    <TextBlock Text="Username" FontSize="24" Foreground="White"/>
-                    <TextBox x:Name="usernameTextBox" FontSize="24" Background="#AA000000" BorderBrush="White" BorderThickness="2" Foreground="White" Margin="0 10" Padding="10 5"/>
-                </StackPanel>
-                <StackPanel Margin="0 20">
-                    <TextBlock Text="Password" FontSize="24" Foreground="White"/>
-                    <PasswordBox x:Name="passwordBox" FontSize="24" Background="#AA000000" BorderBrush="White" BorderThickness="2" Foreground="White" Margin="0 10" Padding="10 5"/>
-                </StackPanel>
-                <Button Content="Sign In" Width="150" Height="50" Background="#F7C544" Foreground="Black" Margin="0 20" BorderBrush="#F7C544" BorderThickness="2" FontSize="18" FontWeight="Bold"/>
+    <Grid Background="#99000000">
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="Sign In" FontSize="48" Foreground="White" Margin="0 0 0 20"/>
+            <StackPanel Margin="0 20">
+                <TextBlock Text="Name" FontSize="24" Foreground="White"/>
+                <TextBox x:Name="usernameTextBox" FontSize="24" Background="#AA000000" BorderBrush="White" BorderThickness="2" Foreground="White" Margin="0 10" Padding="10 5" Width="306"/>
             </StackPanel>
-        </Grid>
+            <StackPanel Margin="0 20">
+                <TextBlock Text="Password" FontSize="24" Foreground="White"/>
+                <PasswordBox x:Name="passwordBox" FontSize="24" Background="#AA000000" BorderBrush="White" BorderThickness="2" Foreground="White" Margin="0 10" Padding="10 5"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0 20">
+                <Button Content="Sign In" Width="150" Height="50" Background="#F7C544" Foreground="Black" BorderBrush="#F7C544" BorderThickness="2" FontSize="18" FontWeight="Bold" Click="SignIn_Click" Margin="0 0 10 0"/>
+                <Button Content="Exit" Width="150" Height="50" Background="#F7C544" Foreground="Black" BorderBrush="#F7C544" BorderThickness="2" FontSize="18" FontWeight="Bold" Click="Back_Click"/>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Window>

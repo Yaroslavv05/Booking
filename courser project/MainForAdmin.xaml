@@ -1,0 +1,17 @@
+﻿<Window x:Class="courser_project.MainForAdmin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:courser_project"
+        mc:Ignorable="d"
+        Title="MainForAdmin" Height="450" Width="800">
+    <Grid Background="LightGray">
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Top" Height="350" Margin="0,50,0,0">
+            <TextBlock Text="Booking Admin" FontSize="50" FontWeight="Bold" Foreground="Black" Margin="0 0 0 20" HorizontalAlignment="Center"/>
+            <Button Content="Delete User" Width="200" Height="50" FontSize="18" FontWeight="Bold" Click="DeleteUser_Click" Background="#F7C544" Foreground="Black" Margin="0 0 0 10" BorderBrush="#F7C544" BorderThickness="2"/>
+            <Button Content="Content Management" Width="200" Height="50" FontSize="18" FontWeight="Bold" Click="ContentManagement_Click" Background="#F7C544" Foreground="Black" Margin="0 0 0 10" BorderBrush="#F7C544" BorderThickness="2"/>
+            <Button Content="Exit" Width="200" Height="50" FontSize="18" FontWeight="Bold" Background="#F7C544" Foreground="Black" Margin="0 0 0 10" BorderBrush="#F7C544" BorderThickness="2" Click="Back_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
